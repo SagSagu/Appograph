@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/nature"
+        android:padding="5dp"
+        android:id="@+id/nav_profile_image"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nav_profile_image"
+        android:inputType="textPersonName"
+        android:text="Appograph"
+        android:textColor="@color/emerald_green"
+        android:textSize="22sp"
+        android:id="@+id/nav_profile_name"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon_edit"
+        android:layout_below="@+id/nav_profile_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nav_header_edit"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon_save"
+        android:layout_below="@+id/nav_profile_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nav_header_save"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/nav_profile_name"
+        android:background="@color/dark_grey"/>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Appograph</string>
+    <string name="permission_title"><u>Permission Title</u></string>
+    <string name="storage_permission">Appograph needs STORAGE permission to set your friends images. You can allow permissions manually by clicking on settings below.</string>
+    <string name="telephone_permission">Appograph needs TELEPHONE permission to call your friends. You can allow permissions manually by clicking on settings below.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="rating_message">If you enjoy using <font fgcolor='#2ecc71'><b>Appograph</b></font>, please take a moment to rate it. Thanks for your support!"</string>
+
+    <string name="admob_app_id">ca-app-pub-5075731266307728~1537718627</string>
+    <string name="banner_home_footer">ca-app-pub-5075731266307728/7096742037</string>
+
+</resources>

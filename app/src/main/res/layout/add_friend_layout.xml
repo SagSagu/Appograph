@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_friend_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.sagsaguz.appograph.AddFriendActivity">
+
+    <com.sagsaguz.appograph.utils.HexagonMaskView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_image"
+        android:id="@+id/user_pic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/user_pic"
+        android:layout_above="@+id/btnAddFriend">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/emerald_green"
+            android:elevation="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Name"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:fontFamily="casual"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:id="@+id/user_name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/emerald_green"
+            android:elevation="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Date Of Birth"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:fontFamily="casual"
+                android:inputType="date"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:id="@+id/user_dob"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/emerald_green"
+            android:elevation="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:hint="Phone"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:fontFamily="casual"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:id="@+id/user_phone"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:hint="WhatsApp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:fontFamily="casual"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:background="@android:color/transparent"
+                android:id="@+id/user_whats_app"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/emerald_green"
+            android:elevation="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Email"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:id="@+id/user_email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/emerald_green"
+            android:elevation="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Hobby1, Hobby2, hobby3 ..."
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:fontFamily="casual"
+                android:background="@android:color/transparent"
+                android:id="@+id/user_hobbies"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        android:background="@color/dark_grey"
+        android:text="Add Friend"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:id="@+id/btnAddFriend"/>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/pb_user"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="11dp"
+        android:background="@color/dark_grey"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants"
+        android:alpha="0.7"
+        android:visibility="gone"
+        android:id="@+id/user_view"/>
+
+</RelativeLayout>
